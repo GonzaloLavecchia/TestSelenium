@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps{
+                echo 'Checkout...'
+            }
+        }
+
+        stage('Build & UnitTest') {
+            steps{
+                echo 'Build....'
+            }
+        }
+
+        stage('Integration Test') {
+            steps{
+                echo 'Deploy...'
+            }
+        }
+    }
+}
