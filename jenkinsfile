@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    tools {
+        nodejs "node"
+        maven "MAVEN"
+    }
+
+    stages {
+
+        stage('Cloning Git') {
+            steps {
+                git 'https://github.com/GonzaloLavecchia/TestSelenium'
+            }
+        }
+
+        stage('Install dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'mvn clean test'
+            }
+        }
+    }
+}
