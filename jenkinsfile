@@ -1,9 +1,0 @@
-pipeline {
-    stages {
-        stage('Checkout') {}
-
-        stage('Build & UnitTest') {}
-
-        stage('Integration Test') {}
-    }
-}
