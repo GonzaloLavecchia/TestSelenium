@@ -1,9 +1,0 @@
-node('docker') {
-
-    stage 'Checkout'
-    checkout scm
-    stage 'Build & UnitTest'
-
-    stage 'Integration Test'
-    
-}
