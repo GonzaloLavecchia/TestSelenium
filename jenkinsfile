@@ -1,0 +1,9 @@
+pipeline {
+
+    stage 'Checkout'
+
+    stage 'Build & UnitTest'
+
+    stage 'Integration Test'
+
+}
