@@ -1,6 +1,6 @@
 node{
     stage('SCM Checkout'){
-        git 'https://github.com/GonzaloLavecchia/TestSelenium'
+        checkout scm
     }
     stage('Test'){
         echo 'Testing...'
