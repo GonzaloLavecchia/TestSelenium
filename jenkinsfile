@@ -1,0 +1,20 @@
+node {
+    tools {
+        maven 'M3'
+    }
+    stage('Checkout') {
+        echo 'Checkout...'
+        git 'https://github.com/GonzaloLavecchia/TestSelenium'
+    }
+
+    stage('Build & UnitTest') {
+        echo 'Build....'
+        dir('Selenium') {
+            sh 'mvn clean test'
+        }
+    }
+
+    stage('Integration Test') {
+        echo 'Deploy...'
+    }
+}
