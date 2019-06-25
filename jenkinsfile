@@ -1,0 +1,9 @@
+node{
+    stage('SCM Checkout'){
+        git 'https://github.com/GonzaloLavecchia/TestSelenium'
+    }
+    stage('Test'){
+        echo 'Testing...'
+        sh 'mvn clean test'
+    }
+}
