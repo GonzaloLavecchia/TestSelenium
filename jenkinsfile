@@ -1,0 +1,26 @@
+node{
+
+    stages {
+        stage('Checkout') {
+            steps{
+                echo 'Checkout...'
+                git 'https://github.com/GonzaloLavecchia/TestSelenium'
+            }
+        }
+
+        stage('Build & UnitTest') {
+            steps{
+                echo 'Build....'
+                dir('Selenium'){
+                    sh 'mvn clean test'
+                }
+            }
+        }
+
+        stage('Integration Test') {
+            steps{
+                echo 'Deploy...'
+            }
+        }
+    }
+}
