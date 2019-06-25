@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">TestNG Test Group</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">7</td><td class="numi">0</td><td class="numi">94,9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">TestNG Test Group &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">TestA<td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">TestB<td><a href="#m2"><b>setUp</b>  </a></td><td class="numi">1</td><td class="numi">4</td></tr>
+<tr><th colspan="4">TestNG Test Group &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">TestA<td><a href="#m3"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">TestB<td><a href="#m4"><b>tearDown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">TestNG Test Group &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">TestB<td><a href="#m5"><b>testSampleTwo</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="2">TestA<td><a href="#m6"><b>testSampleTwo</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m7"><b>testPageTitleSampleA</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="2">TestB<td><a href="#m8"><b>testSampleThree</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m9"><b>testSampleOne</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">TestA<td><a href="#m10"><b>testSampleThree</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">TestB<td><a href="#m11"><b>testPageTitleSampleB</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+</table>
+<h1>TestNG Test Group</h1>
+<a id="m1"></a><h2>TestA:setUp</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+org version 37.1.0
+1561472554411	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 4.0.0
+1561472554413	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1561472554413	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1561472554413	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1561472554413	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1561472554413	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1561472554413	addons.manager	DEBUG	Starting provider: GMPProvider
+1561472554415	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1561472554415	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1561472554415	addons.manager	DEBUG	Starting provider: PluginProvider
+1561472554415	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1561472554415	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1561472554419	addons.manager	DEBUG	Completed startup sequence
+1561472554925	addons.repository	DEBUG	No addons.json found.
+1561472555775	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1561472555934	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\Cognisys\AppData\Local\Temp\anonymous7306325769447819469webdriver-profile\extensions\webdriver-staging
+1561472555935	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	Existing add-on fxmonitor@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2706: TypeError: addon is null
+1561472560520	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 4.0.0
+1561472560522	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 37.1.0
+1561472560523	addons.xpi	DEBUG	Calling bootstrap method shutdown on fxmonitor@mozilla.org version 3.0
+1561472560524	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+[Parent 14420, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12200, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12200, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6540, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6540, Chrome_ChildThread] WARNING: pipe error: 109: [Parent 14420, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13604, Chrome_ChildT1561472560626	addons.manager	DEBUG	shutdown
+1561472560627	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1561472560627	addons.xpi	DEBUG	shutdown
+1561472560627	addons.xpi-utils	DEBUG	shutdown
+1561472560627	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1561472560627	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1561472560627	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1561472560633	addons.manager	DEBUG	Async provider shutdown done
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-NBDBMI3&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:132)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:275)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:220)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:215)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:124)
+<br/>at TestA.setUp(TestA.java:16)
+<br/>35 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+org version 37.1.0
+1561472554411	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 4.0.0
+1561472554413	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1561472554413	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1561472554413	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1561472554413	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1561472554413	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1561472554413	addons.manager	DEBUG	Starting provider: GMPProvider
+1561472554415	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1561472554415	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1561472554415	addons.manager	DEBUG	Starting provider: PluginProvider
+1561472554415	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1561472554415	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1561472554419	addons.manager	DEBUG	Completed startup sequence
+1561472554925	addons.repository	DEBUG	No addons.json found.
+1561472555775	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1561472555934	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\Cognisys\AppData\Local\Temp\anonymous7306325769447819469webdriver-profile\extensions\webdriver-staging
+1561472555935	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	Existing add-on fxmonitor@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1561472555935	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2706: TypeError: addon is null
+1561472560520	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 4.0.0
+1561472560522	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 37.1.0
+1561472560523	addons.xpi	DEBUG	Calling bootstrap method shutdown on fxmonitor@mozilla.org version 3.0
+1561472560524	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+[Parent 14420, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12200, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12200, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6540, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6540, Chrome_ChildThread] WARNING: pipe error: 109: [Parent 14420, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13604, Chrome_ChildT1561472560626	addons.manager	DEBUG	shutdown
+1561472560627	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1561472560627	addons.xpi	DEBUG	shutdown
+1561472560627	addons.xpi-utils	DEBUG	shutdown
+1561472560627	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1561472560627	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1561472560627	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1561472560633	addons.manager	DEBUG	Async provider shutdown done
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:120)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:275)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:220)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:215)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:124)
+<br/>at TestA.setUp(TestA.java:16)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>TestB:setUp</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ddons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 37.1.0
+1561472601030	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 4.0.0
+1561472601031	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1561472601031	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1561472601031	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1561472601031	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1561472601031	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1561472601032	addons.manager	DEBUG	Starting provider: GMPProvider
+1561472601033	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1561472601033	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1561472601033	addons.manager	DEBUG	Starting provider: PluginProvider
+1561472601033	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1561472601034	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1561472601036	addons.manager	DEBUG	Completed startup sequence
+1561472601476	addons.repository	DEBUG	No addons.json found.
+1561472602013	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\Cognisys\AppData\Local\Temp\anonymous5501621641288136689webdriver-profile\extensions\webdriver-staging
+1561472602013	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1561472602013	addons.xpi	DEBUG	Existing add-on fxmonitor@mozilla.org in app-system-defaults
+1561472602013	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1561472602013	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1561472602013	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1561472602014	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2706: TypeError: addon is null
+1561472602098	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1561472608572	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 4.0.0
+1561472608574	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 37.1.0
+1561472608574	addons.xpi	DEBUG	Calling bootstrap method shutdown on fxmonitor@mozilla.org version 3.0
+1561472608575	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+[Child 15120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7568, Chrome_Ch[Parent 7896, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6888, Chrome_ChildThread] WARNI1561472608663	addons.manager	DEBUG	shutdown
+1561472608665	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1561472608665	addons.xpi	DEBUG	shutdown
+1561472608666	addons.xpi-utils	DEBUG	shutdown
+1561472608666	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1561472608666	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1561472608666	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1561472608670	addons.manager	DEBUG	Async provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 16
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;DESKTOP-NBDBMI3&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:132)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:275)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:220)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:215)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:124)
+<br/>at TestB.setUp(TestB.java:16)
+<br/>35 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ddons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 37.1.0
+1561472601030	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 4.0.0
+1561472601031	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1561472601031	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1561472601031	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1561472601031	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1561472601031	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1561472601032	addons.manager	DEBUG	Starting provider: GMPProvider
+1561472601033	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1561472601033	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1561472601033	addons.manager	DEBUG	Starting provider: PluginProvider
+1561472601033	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1561472601034	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1561472601036	addons.manager	DEBUG	Completed startup sequence
+1561472601476	addons.repository	DEBUG	No addons.json found.
+1561472602013	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\Cognisys\AppData\Local\Temp\anonymous5501621641288136689webdriver-profile\extensions\webdriver-staging
+1561472602013	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1561472602013	addons.xpi	DEBUG	Existing add-on fxmonitor@mozilla.org in app-system-defaults
+1561472602013	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1561472602013	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1561472602013	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1561472602014	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2706: TypeError: addon is null
+1561472602098	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+1561472608572	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 4.0.0
+1561472608574	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 37.1.0
+1561472608574	addons.xpi	DEBUG	Calling bootstrap method shutdown on fxmonitor@mozilla.org version 3.0
+1561472608575	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+[Child 15120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7568, Chrome_Ch[Parent 7896, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6888, Chrome_ChildThread] WARNI1561472608663	addons.manager	DEBUG	shutdown
+1561472608665	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1561472608665	addons.xpi	DEBUG	shutdown
+1561472608666	addons.xpi-utils	DEBUG	shutdown
+1561472608666	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1561472608666	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1561472608666	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1561472608670	addons.manager	DEBUG	Async provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 16
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:120)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:275)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:116)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:220)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:215)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:124)
+<br/>at TestB.setUp(TestB.java:16)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>TestA:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>TestB:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>TestB:testSampleTwo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>TestA:testSampleTwo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>TestA:testPageTitleSampleA</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>TestB:testSampleThree</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>TestB:testSampleOne</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>TestA:testSampleThree</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>TestB:testPageTitleSampleB</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
