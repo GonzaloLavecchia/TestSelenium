@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps{
+                echo 'Checkout...'
+            }
+        }
+
+        stage('Build & UnitTest') {
+            steps{
+                echo 'Build....'
+                dir('Selenium'){
+                    sh 'mvn clean test'
+                }
+            }
+        }
+
+        stage('Integration Test') {
+            steps{
+                echo 'Deploy...'
+            }
+        }
+    }
+}
