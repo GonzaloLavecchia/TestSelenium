@@ -4,6 +4,8 @@ node{
     }
     stage('Test'){
         echo 'Testing...'
+        dir('Selenium'){
         sh 'mvn clean test'
+        }
     }
 }
