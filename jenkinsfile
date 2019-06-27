@@ -1,0 +1,15 @@
+node{
+    stage('SCM Checkout'){
+        checkout scm
+    }
+    stage('Build'){
+        echo 'Building...'
+        bat 'docker-compose -f docker-compose.yml up'
+    }
+    stage('Test'){
+        echo 'Testing...'
+        dir('Selenium'){
+            bat 'mvn clean test'
+        }
+    }
+}
