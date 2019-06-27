@@ -1,0 +1,22 @@
+version: '3'
+services:
+  gfish:
+    image: glassfish:cognisys
+    volumes:
+    - /root/compose/2019.05.17_11.05_STO/STO.war:/usr/local/glassfish3/glassfish/domains/domain1/autodeploy/STO.war
+    - ./mysql-connector-java-5.1.45-bin.jar:/usr/local/glassfish3/glassfish/domains/domain1/lib/ext/mysql-connector-java-5.1.45-bin.jar
+    ports:
+    - 34848:4848
+    - 38080:8080
+    environment:
+    - AS_ADMIN_PASSWORD=cognisys
+    - AS_ADMIN_ENABLE_SECURE=1
+    depends_on:
+    - mysql
+  mysql:
+    image: sto_test:0.0.2
+    volumes:
+    - /var/lib/mysql
+    - ./sql:/docker-entrypoint-initdb.d
+    ports:
+    - 33306:3306
